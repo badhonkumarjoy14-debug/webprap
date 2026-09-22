@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create Profile</h2>
+        
+        <!-- The form tag. action="#" keeps it on the same page when you click submit -->
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- 1. Name Input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <!-- 2. Job Input -->
+            <div class="form-group">
+                <label for="job">Job Title</label>
+                <input type="text" id="job" name="job" placeholder="Software Engineer" required>
+            </div>
+
+            <!-- 3. Bio Input (Textarea) -->
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." required></textarea>
+            </div>
+
+            <!-- 4. Picture Input -->
+            <div class="form-group">
+                <label for="pic">Profile Picture</label>
+                <input type="file" id="pic" name="pic" accept="image/*" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Save Profile</button>
+            
+        </form>
+    </div>
+
+    <div id="card">
+        <div id="imgg"></div>
+        <div id="username"></div>
+        <div id="title"></div>
+        <div id="details"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
 
